@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Artistas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor=" let e of arrayEventos">
+    <img src="">
+    <ion-card-header>
+      <ion-card-title>{{ e.responsavel }}</ion-card-title>
+      <ion-card-subtitle>{{ e.nome }}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      {{ e.contato }}
+    </ion-card-content>
+  </ion-card>
+</ion-content>
